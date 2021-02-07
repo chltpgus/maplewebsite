@@ -196,14 +196,14 @@ footer {
 }
 .btn-rounded-white {
   display: inline-block;
-  color: #fff;
+  color: rgb(255, 166, 0);
   padding: 15px 25px;
-  border: 3px solid #fff;
+  border: 3px solid rgb(255, 166, 0);
   border-radius: 30px;
   transition: 0.5s ease all
 }
 .btn-rounded-white:hover {
-  color: #3498db;
+  color: #000000;
   background: #fff;
   text-decoration: none
 }
