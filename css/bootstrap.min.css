@@ -222,8 +222,8 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #525252;
-    background-color: rgb(252, 228, 125)
+    color: #000000;
+    background-color: rgb(255, 255, 255)
 }
 input,
 button,
