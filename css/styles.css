@@ -156,7 +156,7 @@ footer {
 }
 .copyright p {
   margin: 0;
-  color: #74808a
+  color: #000000
 }
 .top {
   text-align: center
@@ -734,7 +734,6 @@ footer {
   }
   footer {
       text-align: center;
-      background: rgb(0, 0, 0);
   }
   .social {
       text-align: center
