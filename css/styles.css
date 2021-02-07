@@ -78,6 +78,7 @@ header {
   animation-timing-function: ease;
   animation-duration: 0.75s;
   background-color: #ffbc45;
+  height: 150px;
 }
 header ul {
   display: inline-block;
