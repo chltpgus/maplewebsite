@@ -73,10 +73,8 @@ a{
     padding: 30px 20px;
   }
   .img1{
-    display: none;
+    width: 80%;
   }
-  .img2{
-    display: inline;
-  }
+  
 }
 
