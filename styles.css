@@ -57,6 +57,10 @@ a{
   margin: 0px auto;
 }
 
+.img2{
+  display: none; 
+}
+
 @media all and (max-width: 1021px)
 {
   .navbar-logo{
@@ -68,13 +72,11 @@ a{
   .navbar{
     padding: 30px 20px;
   }
-  .contents{
+  .img1{
     display: none;
+  }
+  .img2{
+    display: inline;
   }
 }
 
-@media all and (max-width: 480px){
-  .contents{
-    display: none;
-  }
-}
