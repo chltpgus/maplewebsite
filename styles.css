@@ -39,7 +39,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.a{
+a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -76,7 +76,7 @@ body {
 .btn-white:hover {
   color: #ffffff;
   background: rgb(0, 0, 0);
-  text-decoration: none
+  text-decoration: none;
 }
 
 .btn-Question {
@@ -89,10 +89,10 @@ body {
   border-radius: 30px;
   transition: 1s ease all
 }
-.btn-white:Question {
+.btn-Question:hover {
   color: #ffffff;
   background: rgb(0, 0, 0);
-  text-decoration: none
+  text-decoration: none;
 }
 
 .endbar{
@@ -109,7 +109,6 @@ body {
 }
 
 .Question{
-  font-size: 25px;
   color:rgb(255, 255, 255);
 }
 
@@ -152,5 +151,4 @@ body {
     font-size: 15px;
     border: 3.5px solid rgb(255, 255, 255);
   }
-
 }
