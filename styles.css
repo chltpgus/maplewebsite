@@ -67,6 +67,7 @@ a{
   display: inline-block;
   color: rgb(255, 255, 255);
   padding: 15px 25px;
+  margin-top: 50px;
   border: 3px solid rgb(255, 255, 255);
   border-radius: 30px;
   transition: 0.5s ease all
@@ -75,6 +76,19 @@ a{
   color: #000000;
   background: #fff;
   text-decoration: none
+}
+
+.endbar{
+  display: flex;
+  padding: 20px 35px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text1{
+  color:rgb(255, 255, 255);
+}
+.text2{
+  color:rgb(255, 255, 255);
 }
 
 @media all and (max-width: 1023px)
@@ -93,12 +107,7 @@ a{
   }
   
 }
-.endbar{
-  padding: 20px 20px;
-}
-.text1{
-  color:rgb(255, 255, 255);
-}
+
 
 @media all and (max-width: 767px)
 {
