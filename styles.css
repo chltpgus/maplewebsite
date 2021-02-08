@@ -16,7 +16,7 @@ body {
   font-family: 'Godo', sans-serif;
   font-size: 15px;
   margin: 0;
-  background-color: #ffc690;
+  background-color: #000129;
 }
 
 .navbar{
@@ -59,9 +59,11 @@ a{
 
 .img2{
   display: none; 
+  text-align: center; 
+  margin: 0px auto;
 }
 
-@media all and (max-width: 1021px)
+@media all and (max-width: 1023px)
 {
   .navbar-logo{
     font-size : 25px
@@ -78,3 +80,16 @@ a{
   
 }
 
+@media all and (max-width: 767px)
+{
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: block;
+  }
+}
+
+@media all and (max-width: 639px)
+{
+}
