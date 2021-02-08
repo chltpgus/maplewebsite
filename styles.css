@@ -121,4 +121,7 @@ a{
 
 @media all and (max-width: 639px)
 {
+  .endbar{
+    font-size: 10px;
+  }
 }
