@@ -13,7 +13,6 @@
 }
 body {
   display: center;
-  overflow-x:hidden;
   font-family: 'Godo', sans-serif;
   font-size: 15px;
   margin: 0;
@@ -58,13 +57,24 @@ a{
   margin: 0px auto;
 }
 
-.endbar {
-  
+@media all and (max-width: 1021px)
+{
+  .navbar-logo{
+    font-size : 25px
+  }
+  .navbar-side{
+    font-size : 25px
+  }
+  .navbar{
+    padding: 30px 20px;
+  }
+  .contents{
+    display: none;
+  }
 }
 
-.text1{
-
+@media all and (max-width: 480px){
+  .contents{
+    display: none;
+  }
 }
-
-
-
