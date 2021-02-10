@@ -100,23 +100,27 @@ function Result_click(){
                 break;
             case 5:
                 Result_screen[0].style.display = 'none';
-                Result_screen[6].style.display = 'block';
+                Result_screen[5].style.display = 'block';
                 break;
             case 6:
                 Result_screen[0].style.display = 'none';
-                Result_screen[7].style.display = 'block';
+                Result_screen[5].style.display = 'block';
                 break;
             case 7:
                 Result_screen[0].style.display = 'none';
-                Result_screen[7].style.display = 'block';
+                Result_screen[6].style.display = 'block';
                 break;
             case 8:
                 Result_screen[0].style.display = 'none';
-                Result_screen[9].style.display = 'block';
+                Result_screen[7].style.display = 'block';
                 break;
             case 9:
                 Result_screen[0].style.display = 'none';
-                Result_screen[10].style.display = 'block';
+                Result_screen[8].style.display = 'block';
+                break;
+            case 10:
+                Result_screen[0].style.display = 'none';
+                Result_screen[9].style.display = 'block';
                 break;
             default:
                 console.log(count);
