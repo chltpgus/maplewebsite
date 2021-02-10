@@ -8,6 +8,7 @@ let Result_screen = [];
 const Result_btn = document.querySelector('.btn-Confirm');
 let Return_btn = [];
 
+const Nav_btn = document.querySelector('.nav_btn');
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 const array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
