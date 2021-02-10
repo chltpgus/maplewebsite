@@ -4,7 +4,13 @@ let Question_screen = [];
 let Question_btn1 = [];
 let Question_btn2 = [];
 
+let Result_screen = [];
+const Result_btn = document.querySelector('.btn-Confirm');
+
+
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 let count = 0;
 
 for (a in array) {
@@ -21,6 +27,12 @@ for (a in array) {
 
 }
 
+for (a in array2) {
+    Result_screen[a] = document.querySelector('.Result-' + a);
+    console.log('Result_screen[a]');
+
+}
+
 
 
 main_btn.addEventListener('click', function(){
@@ -32,21 +44,94 @@ main_btn.addEventListener('click', function(){
 
 function Question_click_1(screen) {
     Question_btn1[screen].addEventListener('click', function () {
-        Question_screen[screen].style.display = 'none';
-        Question_screen[screen + 1].style.display = 'block';
-        count = count + 1;
-        console.log('count');
+        if(screen == 9){
+            Question_screen[screen].style.display = 'none';
+            Result_screen[0].style.display = 'block';
+            count = count + 1;
+            console.log(count);
+        }
+        else {
+            Question_screen[screen].style.display = 'none';
+            Question_screen[screen + 1].style.display = 'block';
+            count = count + 1;
+            console.log(count);
+        }
     });
 }
 
 function Question_click_2(screen) {
     Question_btn2[screen].addEventListener('click', function () {
+        if(screen == 9){
+            Question_screen[screen].style.display = 'none';
+            Result_screen[0].style.display = 'block';
+            console.log(count);
+            console.log(count);
+        }
+        else {
         Question_screen[screen].style.display = 'none';
         Question_screen[screen + 1].style.display = 'block';
+        console.log(count);
+        }
     });
 }
 
-for (i = 0; i < 9; i++) {
+function Result_click(){
+    Result_btn.addEventListener('click', function(){
+        switch (count){
+            case 0:
+                Result_screen[0].style.display = 'none';
+                Result_screen[1].style.display = 'block';
+                break;
+            case 1:
+                Result_screen[0].style.display = 'none';
+                Result_screen[2].style.display = 'block';
+                break;
+            case 2:
+                Result_screen[0].style.display = 'none';
+                Result_screen[3].style.display = 'block';
+                break;
+            case 3:
+                Result_screen[0].style.display = 'none';
+                Result_screen[4].style.display = 'block';
+                break;
+            case 4:
+                Result_screen[0].style.display = 'none';
+                Result_screen[5].style.display = 'block';
+                break;
+            case 5:
+                Result_screen[0].style.display = 'none';
+                Result_screen[6].style.display = 'block';
+                break;
+            case 6:
+                Result_screen[0].style.display = 'none';
+                Result_screen[7].style.display = 'block';
+                break;
+            case 7:
+                Result_screen[0].style.display = 'none';
+                Result_screen[7].style.display = 'block';
+                break;
+            case 8:
+                Result_screen[0].style.display = 'none';
+                Result_screen[9].style.display = 'block';
+                break;
+            case 9:
+                Result_screen[0].style.display = 'none';
+                Result_screen[10].style.display = 'block';
+                break;
+            default:
+                console.log(count);
+        }
+
+    });
+
+}
+
+
+
+for (i = 0; i < 10; i++) {
     Question_click_1(i);
     Question_click_2(i);
 }
+
+Result_click();
+

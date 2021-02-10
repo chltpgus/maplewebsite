@@ -175,12 +175,12 @@ button{
   display: none;
 }
 
-.Result-1, .Result-2, .Result-3, .Result-4, .Result-5, .Result-6, .Result-7, .Result-8, .Result-9, .Result-10{
-  display: block;
+.Result-0, .Result-1, .Result-2, .Result-3, .Result-4, .Result-5, .Result-6, .Result-7, .Result-8, .Result-9, .Result-10{
+  display: none;
 }
 
 .Result-Confirm{
-  display: block;
+  display: none;
 }
 
 
