@@ -49,5 +49,4 @@ function Question_click_2(screen) {
 for (i = 0; i < 9; i++) {
     Question_click_1(i);
     Question_click_2(i);
-
 }
