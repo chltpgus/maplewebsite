@@ -6,11 +6,12 @@ let Question_btn2 = [];
 
 let Result_screen = [];
 const Result_btn = document.querySelector('.btn-Confirm');
+let Return_btn = [];
 
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 const array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+const array3 = [1, 2, 3, 4, 5, 6, 7, 8, 9,10];
 let count = 0;
 
 for (a in array) {
@@ -29,8 +30,10 @@ for (a in array) {
 
 for (a in array2) {
     Result_screen[a] = document.querySelector('.Result-' + a);
-    console.log('Result_screen[a]');
+}
 
+for (a in array3) {
+    Return_btn[a] = document.querySelector('.btn-Result-' + a);
 }
 
 
@@ -132,10 +135,24 @@ function Result_click(){
 
 
 
+function Return_click(number) {
+    Return_btn[number].addEventListener('click', function () {
+        
+        Result_screen[number].style.display = 'none';
+        count = 0;
+        main_screen.style.display = 'block';
+    });
+}
+
+
 for (i = 0; i < 10; i++) {
     Question_click_1(i);
     Question_click_2(i);
 }
 
 Result_click();
+
+for(let i =1; i<10; i++){
+    Return_click(i);
+}
 

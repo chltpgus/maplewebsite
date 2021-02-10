@@ -124,7 +124,7 @@ button{
   text-decoration: none;
 }
 
-.btn-Confirm, .btn-Result{
+.btn-Confirm, .btn-Result-1, .btn-Result-2, .btn-Result-3, .btn-Result-4, .btn-Result-5, .btn-Result-6, .btn-Result-7, .btn-Result-8, .btn-Result-9{
   font-size: 30px;
   font-family: 'Godo', sans-serif;
   display: inline-block;
@@ -138,7 +138,7 @@ button{
   transition: 1s ease all
 }
 
-.btn-Confirm:hover, .btn-Result:hover{
+.btn-Confirm:hover, .btn-Result-1:hover, .btn-Result-2:hover, .btn-Result-3:hover, .btn-Result-4:hover, .btn-Result-5:hover, .btn-Result-6:hover, .btn-Result-7:hover, .btn-Result-8:hover, .btn-Result-9:hover{
   color: #ffffff;
   background: rgb(0, 0, 0);
   text-decoration: none;
@@ -204,7 +204,7 @@ button{
     font-size: 20px;
   }
 
-  .btn-Confirm, .btn-Result, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
+  .btn-Confirm, .btn-Result-1, .btn-Result-2, .btn-Result-3, .btn-Result-4, .btn-Result-5, .btn-Result-6, .btn-Result-7, .btn-Result-8, .btn-Result-9, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
     font-size: 25px;
   }
 
@@ -231,7 +231,7 @@ button{
     font-size: 18px;
   }
   
-  .btn-Confirm, .btn-Result, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
+  .btn-Confirm, .btn-Result-1, .btn-Result-2, .btn-Result-3, .btn-Result-4, .btn-Result-5, .btn-Result-6, .btn-Result-7, .btn-Result-8, .btn-Result-9, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
     font-size: 20px;
   }
 
@@ -258,7 +258,7 @@ button{
     font-size: 15px;
   }
   
-  .btn-Confirm, .btn-Result, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
+  .btn-Confirm, .btn-Result-1, .btn-Result-2, .btn-Result-3, .btn-Result-4, .btn-Result-5, .btn-Result-6, .btn-Result-7, .btn-Result-8, .btn-Result-9, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
     font-size: 15px;
   }
 
