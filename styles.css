@@ -43,6 +43,12 @@ a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
+button{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 .contents{
   text-align: center; 
   display: block;
@@ -79,7 +85,7 @@ a{
   text-decoration: none;
 }
 
-.btn-Question {
+.btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
   font-size: 30px;
   display: inline-block;
   color: rgb(255, 255, 255);
@@ -91,7 +97,25 @@ a{
   border-radius: 30px;
   transition: 1s ease all
 }
-.btn-Question:hover {
+.btn-Question-1:hover, .btn-Question-2:hover , .btn-Question-3:hover, .btn-Question-4:hover, .btn-Question-5:hover, .btn-Question-6:hover, .btn-Question-7:hover, .btn-Question-8:hover, .btn-Question-9:hover, .btn-Question-10:hover {
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.btn-Question2-1, .btn-Question2-2 , .btn-Question2-3, .btn-Question2-4, .btn-Question2-5, .btn-Question2-6, .btn-Question2-7, .btn-Question2-8, .btn-Question2-9, .btn-Question2-10 {
+  font-size: 30px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 3.5px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  transition: 1s ease all
+}
+.btn-Question2-1:hover, .btn-Question2-2:hover , .btn-Question2-3:hover, .btn-Question2-4:hover, .btn-Question2-5:hover, .btn-Question2-6:hover, .btn-Question2-7:hover, .btn-Question2-8:hover, .btn-Question2-9:hover, .btn-Question2-10:hover {
   color: #ffffff;
   background: rgb(0, 0, 0);
   text-decoration: none;
@@ -119,6 +143,10 @@ a{
   font-size: 25px;
 }
 
+.Question-screen1, .Question-screen2, .Question-screen3, .Question-screen4, .Question-screen5, .Question-screen6, .Question-screen7, .Question-screen8, .Question-screen9, .Question-screen10{
+  display: none;
+}
+
 @media all and (max-width: 1023px)
 {
   .navbar-logo{
@@ -141,6 +169,9 @@ a{
   .btn-Question{
     font-size: 25px;
   }
+  .btn-Question2{
+    font-size: 25px;
+  }
   
 }
 
@@ -159,6 +190,9 @@ a{
   }
   
   .btn-Question{
+    font-size: 20px;
+  }
+  .btn-Question2{
     font-size: 20px;
   }
 }
@@ -180,6 +214,10 @@ a{
   }
   
   .btn-Question{
+    font-size: 18px;
+  }
+
+  .btn-Question2{
     font-size: 18px;
   }
 }
