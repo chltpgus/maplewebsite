@@ -4,8 +4,8 @@ function loadItems(){
     return fetch('data.json').then(response => console.log(response));
 }
 
-loadItems().then(items=> {
-    console.log(items);
+loadItems().then(key=> {
+    console.log(key);
 })
 .catch(console.log);
 
