@@ -8,7 +8,6 @@ let Result_screen = [];      //결과 화면을 담을 배열 선언
 const Result_btn = document.querySelector('.btn-Confirm');    //결과를 버튼 선언
 let Return_btn = [];         //첫 화면으로 돌아가는 리턴 버튼 선언
 
-//const Nav_btn = document.querySelector('.nav_btn');      
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];   //배열에 넣을 인덱스를 위한 배열 선언
 const array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -148,6 +147,7 @@ for (i = 0; i < 10; i++) { // 질문 출력 함수 실행
 }
 
 Result_click(); // 결과 출력 함수 실행 
+
 
 for(let i =1; i<10; i++){ // 리턴 함수 실행
     Return_click(i);
