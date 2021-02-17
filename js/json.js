@@ -1,11 +1,10 @@
 
 
 function loadItems(){
-    return fetch('js/data.json').then(response => console.log(response));
+    return fetch('data.json').then(response => console.log(response));
 }
 
-loadItems().then(key=> {
-    console.log(key);
+loadItems().then(items=> {
 
 })
 .catch(console.log);
