@@ -5,7 +5,7 @@ function loadItems(){
 }
 
 loadItems().then(items=> {
-
+    console.log(items);
 })
 .catch(console.log);
 
