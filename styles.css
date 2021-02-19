@@ -40,15 +40,20 @@ body {
 }
 
 .img1, .img2{
-  animation: mainimgani 2s linear infinite both;
-}
-
-.btn-white{
-  animation: ani 3s;
+  animation: fadein 2s;
   -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari and Chrome */
   -o-animation: fadein 3s;
 }
+
+.btn-white {
+  animation: fadein 3s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s;
+}
+
+
 
 @keyframes fadein {
   from {
