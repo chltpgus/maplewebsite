@@ -20,7 +20,8 @@ let user_text = {
 let json = JSON.stringify(user_text);
 console.log(json);
 */
-
+/*
 var req = new XMLHttpRequest();
 req.open("GET", "https://mapleing.herokuapp.com/");
 req.send();
+*/
