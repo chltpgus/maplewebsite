@@ -23,7 +23,8 @@ fetch('https://mapleing.herokuapp.com/api/user')
   .then(function(res) {
     /*console.log(res);*/
     user = res;
-    console.log(user[id]);
+    for(key in user){console.log(user[key]);}
+    
   });
 
 
