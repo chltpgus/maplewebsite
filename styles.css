@@ -39,6 +39,10 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.main-screen{
+  animation-delay: 1ms;
+}
+
 a{
   text-decoration: none;
   color: rgb(255, 255, 255);
