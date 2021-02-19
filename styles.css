@@ -40,24 +40,42 @@ body {
 }
 
 .img1, .img2{
-  animation: myani 2s linear infinite both;
+  animation: mainimgani 2s linear infinite both;
 }
 
-@keyframes myani{
+.btn-white{
+  animation: ani 3s;
+}
+
+@keyframes mainimgani{
   0% {
     transform: translate(0);
   }
   20% {
-    transform: translate(-5px, 5px);
+    transform: translate(5px, -5px);
   }
   40% {
-    transform: translate(-5px, -5px);
-  }
-  60% {
     transform: translate(5px, 5px);
   }
+  60% {
+    transform: translate(-5px, -5px);
+  }
   80% {
-    transform: translate(5px, -5px);
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes ani{
+  0% {
+    transform: translate(0px, -15px);
+    display: none;
+  }
+  20% {
+    transform: translate(0px, 5px);
+    display: block;
   }
   100% {
     transform: translate(0);
