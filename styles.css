@@ -40,7 +40,13 @@ body {
 }
 
 .main-screen{
-  animation-delay: 1ms;
+  animation-name: myani;
+  animation-direction: 3s;
+}
+
+@keyframes myani{
+  0%{top: 0px;}
+  100%{top: 100px}
 }
 
 a{
