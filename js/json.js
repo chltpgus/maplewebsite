@@ -21,12 +21,6 @@ let json = JSON.stringify(user_text);
 console.log(json);
 */
 
-var reader = new XMLHttpRequest();
-	reader.open('GET', G_CONTEXT_PATH + 'user.txt', true);
-	reader.overrideMimeType('text/plain; charset=utf-8');
-	reader.onload = function() {
-		if (reader.status == 200) {
-			console.log(reader.responseText);
-		};
-	};
-reader.send(null);
+var req = new XMLHttpRequest();
+req.open("GET", "https://mapleing.herokuapp.com/");
+req.send();
