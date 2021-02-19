@@ -42,8 +42,12 @@ body {
 
 
 .main-screen, .btn-white, .Question-screen1, .Question-screen2, .Question-screen3, .Question-screen4, .Question-screen5, .Question-screen6, .Question-screen7, .Question-screen8, .Question-screen9, .Question-screen10, .Result-0, .Result-1, .Result-2, .Result-3, .Result-4, .Result-5, .Result-6, .Result-7, .Result-8, .Result-9 {
-  animation-name: fadein;
+  
   animation-duration: 1s;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s;
 }
 
 
