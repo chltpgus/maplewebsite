@@ -23,8 +23,10 @@ fetch('https://mapleing.herokuapp.com/api/user')
   .then(function(res) {
     /*console.log(res);*/
     user = res;
+    console.log(user);
   });
-console.log(user);
+
+
 for (a in array) { // 질문 화면 선언
     Question_screen[a-1] = document.querySelector('.Question-screen' + a);
 
