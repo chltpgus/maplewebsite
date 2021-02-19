@@ -44,7 +44,8 @@ body {
 }
 
 .btn-white{
-  animation: ani 3s;
+  animation: ani 3s, fadein 2s;
+ 
 }
 
 @keyframes mainimgani{
@@ -74,11 +75,11 @@ body {
     display: none;
   }
   20% {
-    transform: translate(0px, 5px);
+    transform: translate(0px, 15px);
     display: block;
   }
   100% {
-    transform: translate(0);
+    transform: translate(0px, 0px);
   }
 }
 
