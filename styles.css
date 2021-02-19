@@ -39,14 +39,29 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.main-screen{
-  animation-name: myani;
-  animation-direction: 3s;
+.img1, .img2{
+  animation: myani 2s linear infinite both;
 }
 
 @keyframes myani{
-  0%{left: 0px; top: 0px;}
-  100%{left: 200px; top: 0px;}
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 a{
