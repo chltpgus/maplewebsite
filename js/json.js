@@ -22,7 +22,7 @@ console.log(json);
 */
 
 var reader = new XMLHttpRequest();
-	reader.open('GET', G_CONTEXT_PATH + '/data/sample.txt', true);
+	reader.open('GET', G_CONTEXT_PATH + 'user.txt', true);
 	reader.overrideMimeType('text/plain; charset=utf-8');
 	reader.onload = function() {
 		if (reader.status == 200) {
