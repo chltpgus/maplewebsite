@@ -1,5 +1,6 @@
 const main_btn = document.getElementById('btn-white');          //메인 버튼 선언
 const main_screen = document.querySelector('.main-screen');     //메인 화면이 담겨있는 div를 선언
+const user_text = document.querySelector('.text2');
 let Question_screen = [];    //질문 화면을 담을 배열 선언
 let Question_btn1 = [];      //질문 1 버튼 배열선언
 let Question_btn2 = [];      //질문 2 버튼 배열 선언
@@ -28,6 +29,7 @@ fetch('https://mapleing.herokuapp.com/api/user')
     /*console.log(res);*/
     user = res;
     console.log(user);
+    user_text.innerHTML = "현재 테스트한 사용자는 "+user.num+"명 입니다."
     
   });
 
