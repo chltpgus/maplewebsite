@@ -131,18 +131,17 @@ function Result_click() {  // 결과 화면 출력 함수
         user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 */
            
-var url = 'https://mapleing.herokuapp.com/api/user';
-var data = {username: 'example'};
-
-fetch(url, {
-  method: 'POST', // or 'PUT'
-  body: JSON.stringify(data), // data can be `string` or {object}!
-  headers:{
-    'Content-Type': 'application/json'
-  }
-}).then(res => res.json())
-.then(response => console.log('Success:', JSON.stringify(response)))
-.catch(error => console.error('Error:', error));
+  
+  let response = await fetch('https://mapleing.herokuapp.com/api/user', {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(user)
+  });
+  
+  let result = await response.json();
+  alert(result.message);
         
         
         switch (count){  // 긍정적인 답변의 수에 따른 결과 화면 출력
