@@ -28,7 +28,7 @@ fetch('https://mapleing.herokuapp.com/api/user')
   .then(function(res) {
     /*console.log(res);*/
     user = res;
-    console.log(user.num);
+    console.log(user);
     user_text.innerHTML = "현재 테스트한 사용자는 "+user.num+"명 입니다.";
     
   });
