@@ -100,14 +100,22 @@ function Result_click() {  // 결과 화면 출력 함수
 
         fetch('https://mapleing.herokuapp.com/api/user')
             .then(function (res) {
-                return res.json(user);
+                return res.json();
             })
             .then(function (res) {
                 /*console.log(res);*/
                 user = res;
                 user[0].num ++;
                
-               
+                fetch('https://jsonplaceholder.typicode.com/users', {
+                    method: 'PUT',
+                    headers: {
+                      'Content-type': 'application/json; charset=UTF-8',
+                    },
+                    body: JSON.stringify(user),
+                  })
+                    .then(res => res.json())
+                    .then(data => console.log(data))
 
                 user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
