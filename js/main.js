@@ -16,14 +16,13 @@ const array3 = [1, 2, 3, 4, 5, 6, 7, 8, 9,10];
 
 let count = 0;  //질문에 긍적적인 답변을 한 수를 더하기 위한 변수 선언
 let user = {
-    id: "",
-    name: "",
-    num: ""
+    id: 1,
+    name: "user number",
+    num: 62
 };
 
 fetch('https://mapleing.herokuapp.com/api/user')
   .then(function(res) {
-    console.log(res);
     return res.json();
   })
   .then(function(res) {
@@ -101,7 +100,7 @@ function Result_click() {  // 결과 화면 출력 함수
 
         fetch('https://mapleing.herokuapp.com/api/user')
             .then(function (res) {
-                return res.json();
+                return user.json();
             })
             .then(function (res) {
                 /*console.log(res);*/
