@@ -100,7 +100,7 @@ function Result_click() {  // 결과 화면 출력 함수
 
         fetch('https://mapleing.herokuapp.com/api/user')
             .then(function (res) {
-                return user.json();
+                return res.json(user);
             })
             .then(function (res) {
                 /*console.log(res);*/
