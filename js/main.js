@@ -29,7 +29,7 @@ fetch('https://mapleing.herokuapp.com/api/user')
     /*console.log(res);*/
     user = res;
     console.log(user);
-    user_text.innerHTML = "현재 테스트한 사용자는 "+user[0].num+"명 입니다.";
+    user_text.innerHTML = "현재 테스트한 사용자는 "+user.num+"명 입니다.";
     
   });
 
