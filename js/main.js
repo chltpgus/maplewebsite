@@ -114,7 +114,7 @@ function Result_click() {  // 결과 화면 출력 함수
                     },
                     contentType: "application/json; charset=UTF-8",
                     async: true,
-                    error: function{
+                    error: function(){
                         alert("실패");
                     }
                 });
