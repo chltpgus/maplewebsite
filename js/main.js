@@ -135,11 +135,10 @@ var url = 'https://mapleing.herokuapp.com/api/user';
 var data = [{id: 1,
     name: "user number",
     num: 62}];
-let asd = JSON.stringify(data);
 
 fetch(url, {
-  method: 'PUT', // or 'PUT'
-  body: JSON.stringify(asd), // data can be `string` or {object}!
+  method: 'post', // or 'PUT'
+  body: JSON.stringify(data), // data can be `string` or {object}!
   headers:{
     'Content-Type': 'application/json'
   }
