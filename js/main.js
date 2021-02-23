@@ -131,17 +131,25 @@ function Result_click() {  // 결과 화면 출력 함수
         user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 */
            
-  
-  let response = await fetch('https://mapleing.herokuapp.com/api/user', {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8'
-    },
-    body: JSON.stringify(user)
-  });
-  
-  let result = await response.json();
-  alert(result.message);
+$(document).ready(function() {
+    jQuery.ajax({
+          type:"GET",
+          url:"https://mapleing.herokuapp.com/api/user",
+          dataType:"JSON", // 옵션이므로 JSON으로 받을게 아니면 안써도 됨
+          success : function(data) {
+                // 통신이 성공적으로 이루어졌을 때 이 함수를 타게 된다.
+                // TODO
+          },
+          complete : function(data) {
+                // 통신이 실패했어도 완료가 되었을 때 이 함수를 타게 된다.
+                // TODO
+          },
+          error : function(xhr, status, error) {
+                alert("에러발생");
+          }
+    });
+});
+
         
         
         switch (count){  // 긍정적인 답변의 수에 따른 결과 화면 출력
