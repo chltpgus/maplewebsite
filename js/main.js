@@ -111,6 +111,7 @@ function Result_click() {  // 결과 화면 출력 함수
                     method: 'PUT',
                     headers: {
                       'Content-type': 'application/json; charset=UTF-8',
+                      'Accept':'application/json'
                     },
                     body: JSON.stringify({
                         id: 1,
