@@ -111,7 +111,7 @@ function Result_click() {  // 결과 화면 출력 함수
         fetch('https://mapleing.herokuapp.com/api/user', {
             method: 'PUT',
             headers: {
-                'Content-type': 'application/json; charset=UTF-8',
+                'Content-type': 'application/json',
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
