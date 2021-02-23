@@ -123,7 +123,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 user = res;
                 user[0].num ++;
                
-                post_to_url('https://mapleing.herokuapp.com/api/user', user, 'get');
+                post_to_url('https://mapleing.herokuapp.com/api/user', user, "get");
 
                 user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
