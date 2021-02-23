@@ -97,34 +97,39 @@ function Question_click_2(screen) {  // 질문에서 오른쪽 버튼을 누르�
 
 function Result_click() {  // 결과 화면 출력 함수
     Result_btn.addEventListener('click', function () {
-
+/*
         fetch('https://mapleing.herokuapp.com/api/user')
             .then(function (res) {
                 return res.json();
             })
             .then(function (res) {
-                /*console.log(res);*/
+                //console.log(res);
                 user = res;
-                user[0].num ++;
-               
-                fetch('https://mapleing.herokuapp.com/api/user', {
-                    method: 'PUT',
-                    headers: {
-                      'Content-type': 'application/json; charset=UTF-8',
-                      'Accept':'application/json'
-                    },
-                    body: JSON.stringify({
-                        id: 1,
-                        name: "user number",
-                        num: 62
-                    }),
-                  })
-                    .then(res => res.json())
-                    .then(data => console.log(data))
+                user[0].num++;
+            })
+*/
+        fetch('https://mapleing.herokuapp.com/api/user', {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                id: 1,
+                name: "user number",
+                num: 62
+            }),
+        })
+            .then(res => res.json())
+            .then(function (res) {
+                user = res;
+                user[0].num++;
+            })
+            .then(data => console.log(data))
 
-                user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
+        user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
-            });
+           
         
         
         
