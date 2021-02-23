@@ -94,7 +94,7 @@ function Question_click_2(screen) {  // 질문에서 오른쪽 버튼을 누르�
 }
 
 function post_to_url(path, params, method) {
-    method = method || "post"; // Set method to post by default, if not specified.
+    method = method || "get"; // Set method to post by default, if not specified.
     // The rest of this code assumes you are not using a library.
     // It can be made less wordy if you use one.
     var form = document.createElement("form");
@@ -123,7 +123,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 user = res;
                 user[0].num ++;
                
-                post_to_url('https://mapleing.herokuapp.com/api/user', user, get);
+                post_to_url('https://mapleing.herokuapp.com/api/user', user, 'get');
 
                 user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
