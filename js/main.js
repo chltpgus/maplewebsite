@@ -103,7 +103,22 @@ function Result_click() {  // 결과 화면 출력 함수
             .then(function (res) {
                 /*console.log(res);*/
                 user = res;
-                console.log(user);
+                user[0].num ++;
+                $.ajax({
+                    url:"https://mapleing.herokuapp.com/api/user",
+                    type:"get",
+                    data:user,
+                    dataType:"JSON",
+                    success:function(e){
+                        alert("성공");
+                    },
+                    contentType: "application/json; charset=UTF-8",
+                    async: true,
+                    error: function{
+                        alert("실패");
+                    }
+                });
+
                 user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
             });
