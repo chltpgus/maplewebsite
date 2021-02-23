@@ -93,8 +93,23 @@ function Question_click_2(screen) {  // 질문에서 오른쪽 버튼을 누르�
     });
 }
 
-function Result_click(){  // 결과 화면 출력 함수
-    Result_btn.addEventListener('click', function(){
+function Result_click() {  // 결과 화면 출력 함수
+    Result_btn.addEventListener('click', function () {
+
+        fetch('https://mapleing.herokuapp.com/api/user')
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (res) {
+                /*console.log(res);*/
+                user = res;
+                console.log(user);
+                user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
+
+            });
+        
+        
+        
         switch (count){  // 긍정적인 답변의 수에 따른 결과 화면 출력
             case 0:
                 Result_screen[0].style.display = 'none';
