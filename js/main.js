@@ -107,7 +107,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 user = res;
                 user[0].num ++;
                
-                fetch('https://jsonplaceholder.typicode.com/users', {
+                fetch('https://mapleing.herokuapp.com/api/user', {
                     method: 'PUT',
                     headers: {
                       'Content-type': 'application/json; charset=UTF-8',
