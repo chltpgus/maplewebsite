@@ -132,9 +132,9 @@ function Result_click() {  // 결과 화면 출력 함수
 */
            
 var url = 'https://mapleing.herokuapp.com/api/user';
-var data = [{id: 1,
+var data = {id: 1,
     name: "user number",
-    num: 62}];
+    num: 62};
 
 fetch(url, {
   method: 'POST', // or 'PUT'
