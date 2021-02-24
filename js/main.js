@@ -109,6 +109,11 @@ function Result_click() {  // 결과 화면 출력 함수
             })
 */
 
+user = {
+    id: 1,
+    name: "user number",
+    num: 62
+};
 
 
         fetch('https://mapleing.herokuapp.com/api/user', {
@@ -125,7 +130,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 user[0].num++;
             })
             .then(data => console.log(data))
-            console.log(JSON.stringify(user));
+            //console.log(JSON.stringify(user));
         user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
            
