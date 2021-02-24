@@ -110,18 +110,14 @@ function Result_click() {  // 결과 화면 출력 함수
 */
 
 console.log(JSON.stringify(user));
-/*
+
         fetch('https://mapleing.herokuapp.com/api/user', {
             method: 'PUT',
             headers: {
-                'Content-type': 'application/json',
-                'Accept': 'application/json'
+                "Content-type": "application/json",
+                "Accept": "application/json"
             },
-            body: JSON.stringify({
-                id: 1,
-                name: "user number",
-                num: 62
-            }),
+            body: JSON.stringify(user),
         })
             .then(res => res.json())
             .then(function (res) {
@@ -131,7 +127,7 @@ console.log(JSON.stringify(user));
             .then(data => console.log(data))
 
         user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
-*/
+
            
 
         
