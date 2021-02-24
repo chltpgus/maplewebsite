@@ -123,12 +123,18 @@ users = {
     num: 62
 };
 
-$.ajax({
-    url: 'https://mapleing.herokuapp.com/api/user',
-    success: function (data) {
-      console.log(data)
-    },
-  })
+var xhr = new XMLHttpRequest();
+var url = "https://mapleing.herokuapp.com/api/user";
+xhr.open("POST", url, true);
+xhr.setRequestHeader("Content-Type", "application/json");
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        var json = JSON.parse(xhr.responseText);
+        console.log(json.email + ", " + json.password);
+    }
+};
+var data = JSON.stringify({ "id": "1" ,"name": "user number","num": "62"});
+xhr.send(data);
 
 /*
         fetch('https://mapleing.herokuapp.com/api/user', {
