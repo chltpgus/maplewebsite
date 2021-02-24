@@ -122,7 +122,7 @@ users = {
     name: "user number",
     num: 62
 };
-
+/*
 var xhr = new XMLHttpRequest();
 var url = "https://mapleing.herokuapp.com/api/user";
 xhr.open("POST", url, true);
@@ -135,7 +135,7 @@ xhr.onreadystatechange = function () {
 };
 var data = JSON.stringify({ "id": "1" ,"name": "user number","num": "62"});
 xhr.send(data);
-
+*/
 /*
         fetch('https://mapleing.herokuapp.com/api/user', {
             method: 'POST',
