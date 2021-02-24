@@ -129,8 +129,6 @@ users = {
             window.Unity.call(JSON.parse(JSON.stringify(body)).id);
         });
     
-    
-    출처: https://boxfoxs.tistory.com/308 [박스여우 - BoxFox]
         /*
             .then(res => res.json())
             .then(function (res) {
