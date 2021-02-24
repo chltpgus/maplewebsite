@@ -123,7 +123,7 @@ users = {
                 "Accept": "application/json"
             },
             body: JSON.stringify(users),
-        })
+        });/*
             .then(res => res.json())
             .then(function (res) {
                 user = res;
@@ -131,6 +131,7 @@ users = {
             })
             .then(data => console.log(data))
             //console.log(JSON.stringify(user));
+            */
         user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
            
