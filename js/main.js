@@ -108,7 +108,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 //console.log(res);
                 user = res;
                 user[0].num++;
-
+                user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
                 var xhr = new XMLHttpRequest();
                 var url = "https://mapleing.herokuapp.com/api/user";
                 xhr.open("POST", url, true);
@@ -144,7 +144,6 @@ function Result_click() {  // 결과 화면 출력 함수
             .then(data => console.log(data))
             //console.log(JSON.stringify(user));
             */
-        user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
 
            
 
