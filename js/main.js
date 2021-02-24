@@ -115,7 +115,21 @@ users = {
     num: 62
 };
 
+var urls = 'http://boxfoxs.tistory.com/';
+    var opts = {
+        method: 'POST',
+        body: '{longUrl:"' + urls + '"}',
+        headers: {
+            "Content-Type": "application/json"
+        }
+    };
+    fetch('https://mapleing.herokuapp.com/api/user', opts).then(function(response) {
+        return response.json();
+    }).then(function(body) {
+        window.Unity.call(JSON.parse(JSON.stringify(body)).id);
+    });
 
+/*
         fetch('https://mapleing.herokuapp.com/api/user', {
             method: 'POST',
             headers: {
@@ -123,13 +137,8 @@ users = {
                 "Accept": "application/json"
             },
             body: JSON.stringify(users),
-        }).then(function(response) {
-            return response.json();
-        }).then(function(body) {
-            window.Unity.call(JSON.parse(JSON.stringify(body)).id);
-        });
-    
-        /*
+        })
+        
             .then(res => res.json())
             .then(function (res) {
                 user = res;
