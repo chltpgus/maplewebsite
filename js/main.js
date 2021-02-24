@@ -117,7 +117,7 @@ users = {
 
 
         fetch('https://mapleing.herokuapp.com/api/user', {
-            method: 'PUT',
+            method: 'POST',
             headers: {
                 "Content-type": "application/json",
                 "Accept": "application/json"
