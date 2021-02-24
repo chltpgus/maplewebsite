@@ -23,7 +23,7 @@ let user = {
 
 
 
-fetch('https://mapleing.herokuapp.com/api/user')
+fetch('https://mapleing.herokuapp.com/api/user') //fetch로 서버에게 요청하고 테스트한 사용자 인원수를 가져와 출력한다.
   .then(function(res) {
     return res.json();
   })
@@ -98,7 +98,7 @@ function Question_click_2(screen) {  // 질문에서 오른쪽 버튼을 누르�
 function Result_click() {  // 결과 화면 출력 함수
     Result_btn.addEventListener('click', function () {
 
-        fetch('https://mapleing.herokuapp.com/api/user')
+        fetch('https://mapleing.herokuapp.com/api/user')//fetch로 서버에게 요청하고 테스트한 사용자 인원수를 가져와 결과 버튼을 누르면 사용한 사용자수 +1하고 서버에 보낸다.
             .then(function (res) {
                 return res.json();
             })
@@ -118,31 +118,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 var data = JSON.stringify(user[0]);
                 xhr.send(data);
             })
-
-
-
-/*
-        fetch('https://mapleing.herokuapp.com/api/user', {
-            method: 'POST',
-            headers: {
-                "Content-type": "application/json",
-                "Accept": "application/json"
-            },
-            body: JSON.stringify(users),
-        })
-        
-            .then(res => res.json())
-            .then(function (res) {
-                user = res;
-                user[0].num++;
-            })
-            .then(data => console.log(data))
-            //console.log(JSON.stringify(user));
-            */
-
-           
-
-        
+ 
         
         switch (count){  // 긍정적인 답변의 수에 따른 결과 화면 출력
             case 0:
