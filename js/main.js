@@ -108,6 +108,8 @@ function Result_click() {  // 결과 화면 출력 함수
                 user[0].num++;
             })
 */
+
+console.log(JSON.stringify(user));
 /*
         fetch('https://mapleing.herokuapp.com/api/user', {
             method: 'PUT',
