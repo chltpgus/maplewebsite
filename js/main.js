@@ -108,12 +108,12 @@ function Result_click() {  // 결과 화면 출력 함수
                 user[0].num++;
             })
 */
-
-user = {
+/*
+user = [{
     id: 1,
     name: "user number",
     num: 62
-};
+}];*/
 
 
         fetch('https://mapleing.herokuapp.com/api/user', {
@@ -122,7 +122,7 @@ user = {
                 "Content-type": "application/json",
                 "Accept": "application/json"
             },
-            body: JSON.stringify(user),
+            body: JSON.stringify(user[0]),
         })
             .then(res => res.json())
             .then(function (res) {
