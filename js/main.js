@@ -18,7 +18,7 @@ let count = 0;  //질문에 긍적적인 답변을 한 수를 더하기 위한 �
 let user = {
     id: 1,
     name: "user number",
-    num: 62
+    num: 1
 };
 
 
