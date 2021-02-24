@@ -118,6 +118,7 @@ xhr.onreadystatechange = function () {
         console.log(json.email + ", " + json.password);
     }
 };
+console.log(user);
 var data = JSON.stringify(user);
 xhr.send(data);
             })
