@@ -99,7 +99,7 @@ function Question_click_2(screen) {  // 질문에서 오른쪽 버튼을 누르�
 
 function Result_click() {  // 결과 화면 출력 함수
     Result_btn.addEventListener('click', function () {
-/*
+
         fetch('https://mapleing.herokuapp.com/api/user')
             .then(function (res) {
                 return res.json();
@@ -109,13 +109,6 @@ function Result_click() {  // 결과 화면 출력 함수
                 user = res;
                 user[0].num++;
             })
-*/
-
-users = {
-    id: 1,
-    name: "user number",
-    num: 63
-};
 
 var xhr = new XMLHttpRequest();
 var url = "https://mapleing.herokuapp.com/api/user";
@@ -127,7 +120,7 @@ xhr.onreadystatechange = function () {
         console.log(json.email + ", " + json.password);
     }
 };
-var data = JSON.stringify(users);
+var data = JSON.stringify(user);
 xhr.send(data);
 
 /*
