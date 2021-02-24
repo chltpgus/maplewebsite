@@ -108,19 +108,20 @@ function Result_click() {  // 결과 화면 출력 함수
                 //console.log(res);
                 user = res;
                 user[0].num++;
+
                 var xhr = new XMLHttpRequest();
-var url = "https://mapleing.herokuapp.com/api/user";
-xhr.open("POST", url, true);
-xhr.setRequestHeader("Content-Type", "application/json");
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        var json = JSON.parse(xhr.responseText);
-        console.log(json.email + ", " + json.password);
-    }
-};
-console.log(user);
-var data = JSON.stringify(user);
-xhr.send(data);
+                var url = "https://mapleing.herokuapp.com/api/user";
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var json = JSON.parse(xhr.responseText);
+                        console.log(json.email + ", " + json.password);
+                    }
+                };
+                console.log(user);
+                var data = JSON.stringify(user[0]);
+                xhr.send(data);
             })
 
 
