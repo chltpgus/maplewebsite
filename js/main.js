@@ -108,9 +108,7 @@ function Result_click() {  // 결과 화면 출력 함수
                 //console.log(res);
                 user = res;
                 user[0].num++;
-            })
-
-var xhr = new XMLHttpRequest();
+                var xhr = new XMLHttpRequest();
 var url = "https://mapleing.herokuapp.com/api/user";
 xhr.open("POST", url, true);
 xhr.setRequestHeader("Content-Type", "application/json");
@@ -122,6 +120,9 @@ xhr.onreadystatechange = function () {
 };
 var data = JSON.stringify(user);
 xhr.send(data);
+            })
+
+
 
 /*
         fetch('https://mapleing.herokuapp.com/api/user', {
