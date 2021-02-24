@@ -119,7 +119,7 @@ users = {
 
 var xhr = new XMLHttpRequest();
 var url = "https://mapleing.herokuapp.com/api/user";
-xhr.open("POST", url, true);
+xhr.open("GET", url, true);
 xhr.setRequestHeader("Content-Type", "application/json");
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
