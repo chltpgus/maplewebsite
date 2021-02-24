@@ -114,7 +114,7 @@ function Result_click() {  // 결과 화면 출력 함수
 users = {
     id: 1,
     name: "user number",
-    num: 62
+    num: 63
 };
 
 var xhr = new XMLHttpRequest();
@@ -127,7 +127,7 @@ xhr.onreadystatechange = function () {
         console.log(json.email + ", " + json.password);
     }
 };
-var data = JSON.stringify({ "id": "1" ,"name": "user number","num": "62"});
+var data = JSON.stringify(users);
 xhr.send(data);
 
 /*
