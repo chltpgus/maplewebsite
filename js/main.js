@@ -28,9 +28,7 @@ fetch('https://mapleing.herokuapp.com/api/user')
     return res.json();
   })
   .then(function(res) {
-    /*console.log(res);*/
     user = res;
-    console.log(user);
     user_text.innerHTML = "현재 테스트한 사용자는 "+user[0].num+"명 입니다.";
     
   });
@@ -105,7 +103,6 @@ function Result_click() {  // 결과 화면 출력 함수
                 return res.json();
             })
             .then(function (res) {
-                //console.log(res);
                 user = res;
                 user[0].num++;
                 user_text.innerHTML = "현재 테스트한 사용자는 " + user[0].num + "명 입니다.";
@@ -116,10 +113,8 @@ function Result_click() {  // 결과 화면 출력 함수
                 xhr.onreadystatechange = function () {
                     if (xhr.readyState === 4 && xhr.status === 200) {
                         var json = JSON.parse(xhr.responseText);
-                        console.log(json.email + ", " + json.password);
                     }
                 };
-                console.log(user);
                 var data = JSON.stringify(user[0]);
                 xhr.send(data);
             })
