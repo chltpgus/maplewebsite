@@ -360,6 +360,11 @@ button{
     padding: 20px 20px;
   }
 
+  .img2{
+    width: 300px;
+    height: 276px;
+    object-fit: cover;
+  }
   .btn-white {
     font-size: 12px;
     border: 3.5px solid rgb(255, 255, 255);
