@@ -367,7 +367,7 @@ button{
   }
   .btn-white {
     font-size: 12px;
-    border: 2.5px solid rgb(255, 255, 255);
+    border: 3.5px solid rgb(255, 255, 255);
   }
 
   .Question{
@@ -376,10 +376,12 @@ button{
   
   .btn-Confirm, .btn-Result-1, .btn-Result-2, .btn-Result-3, .btn-Result-4, .btn-Result-5, .btn-Result-6, .btn-Result-7, .btn-Result-8, .btn-Result-9, .btn-Question-1, .btn-Question-2 , .btn-Question-3, .btn-Question-4, .btn-Question-5, .btn-Question-6, .btn-Question-7, .btn-Question-8, .btn-Question-9, .btn-Question-10 {
     font-size: 11px;
+    padding: 10px 20px;
   }
 
   .btn-Question2-1, .btn-Question2-2 , .btn-Question2-3, .btn-Question2-4, .btn-Question2-5, .btn-Question2-6, .btn-Question2-7, .btn-Question2-8, .btn-Question2-9, .btn-Question2-10 {
     font-size: 11px;
+    padding: 10px 20px;
     
   }
 
