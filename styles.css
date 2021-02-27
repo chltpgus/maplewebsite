@@ -356,7 +356,7 @@ button{
 @media all and (max-width: 330px)
 {
   .endbar{
-    font-size: 8px;
+    font-size: 5px;
     padding: 20px 20px;
   }
 
