@@ -353,7 +353,7 @@ button{
 
 }
 
-@media all and (max-width: 330px)
+@media all and (max-width: 325px)
 {
   .endbar{
     font-size: 5px;
