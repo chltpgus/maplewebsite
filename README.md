@@ -11,8 +11,8 @@ Html, Css을 사용해서 메인화면을 구성했다. 퍼센트를 조절해�
 "현재 테스트한 사용자는 82명 입니다."의 텍스트는 웹서버에 GET 요청을 해서 82명이라는 인원을 가져왔다.
 
 
-<img src="https://user-images.githubusercontent.com/67909892/109588372-f817b900-7b4b-11eb-9d1f-0926c801d38c.png" width="40%">
-<img src="https://user-images.githubusercontent.com/67909892/109588449-18477800-7b4c-11eb-89e1-bd35f8a27d6a.png" width="40%">
+<img src="https://user-images.githubusercontent.com/67909892/109588372-f817b900-7b4b-11eb-9d1f-0926c801d38c.png" width="40%"> <img src="https://user-images.githubusercontent.com/67909892/109588449-18477800-7b4c-11eb-89e1-bd35f8a27d6a.png" width="40%">
+
 
 
 테스트를 시작하면 나오는 질문 화면을 구성했다. 질문 div를 10개 만들고 display = 'none'처리를 해놓고 버튼을 누르면 다음 화면이 display = 'block'이 되서 출력되는 방식이다.
