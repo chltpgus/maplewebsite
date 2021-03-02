@@ -21,4 +21,5 @@ count 변수에는 긍적 대답이 나오는 질문을 카운트해서 마지�
 
 <p align="center"><img src="https://user-images.githubusercontent.com/67909892/109589856-59d92280-7b4e-11eb-92ed-59a08871a1b3.png" align="center" width="40%"></p>
 
+<p align="center"><img src="https://user-images.githubusercontent.com/67909892/109589980-8856fd80-7b4e-11eb-9caf-152c15b89023.png" align="center" width="40%"><img src="https://user-images.githubusercontent.com/67909892/109590002-9442bf80-7b4e-11eb-8e0e-2fcbf76ceef4.png" align="center" width="40%"></p>
 
