@@ -20,7 +20,7 @@ Html, Css을 사용해서 메인화면을 구성했다. 퍼센트를 조절해�
 count 변수에는 긍적 대답이 나오는 질문을 카운트해서 마지막 결과에 사용된다.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/67909892/109591440-d967f100-7b50-11eb-9f1e-974129bb0764.png" align="center" width="40%"><img src="https://user-images.githubusercontent.com/67909892/109591301-9dcd2700-7b50-11eb-84ab-dfb81af4af04.png" align="center" width="60%"></p>
-
+결과 확인 버튼을 누르면 사용자 수에서 +1을 해서 웹서버로 POST 전송을 한다.
 
 
 <p align="center"><img src="https://user-images.githubusercontent.com/67909892/109589856-59d92280-7b4e-11eb-92ed-59a08871a1b3.png" align="center" width="40%"><img src="https://user-images.githubusercontent.com/67909892/109589980-8856fd80-7b4e-11eb-9caf-152c15b89023.png" align="center" width="30%"></p>
