@@ -14,12 +14,12 @@ Html, Css을 사용해서 메인화면을 구성했다. 퍼센트를 조절해�
 <img src="https://user-images.githubusercontent.com/67909892/109589519-c69fed00-7b4d-11eb-940c-967f65938c38.png" >
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/67909892/109588372-f817b900-7b4b-11eb-9d1f-0926c801d38c.png" width="40%"> <img src="https://user-images.githubusercontent.com/67909892/109588449-18477800-7b4c-11eb-89e1-bd35f8a27d6a.png" width="80%"></p>
+<img src="https://user-images.githubusercontent.com/67909892/109588372-f817b900-7b4b-11eb-9d1f-0926c801d38c.png" width="40%"> <img src="https://user-images.githubusercontent.com/67909892/109588449-18477800-7b4c-11eb-89e1-bd35f8a27d6a.png" width="40%"></p>
 
 테스트를 시작하면 나오는 질문 화면을 구성했다. 질문 div를 10개 만들고 display = 'none'처리를 해놓고 버튼을 누르면 다음 화면이 display = 'block'이 되서 출력되는 방식이다.
 count 변수에는 긍적 대답이 나오는 질문을 카운트해서 마지막 결과에 사용된다.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/67909892/109591440-d967f100-7b50-11eb-9f1e-974129bb0764.png" align="center" width="40%"><img src="https://user-images.githubusercontent.com/67909892/109591301-9dcd2700-7b50-11eb-84ab-dfb81af4af04.png" align="center" width="30%"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/67909892/109591440-d967f100-7b50-11eb-9f1e-974129bb0764.png" align="center" width="40%"><img src="https://user-images.githubusercontent.com/67909892/109591301-9dcd2700-7b50-11eb-84ab-dfb81af4af04.png" align="center" width="80%"></p>
 
 
 
