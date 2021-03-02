@@ -23,3 +23,4 @@ count 변수에는 긍적 대답이 나오는 질문을 카운트해서 마지�
 
 <p align="center"><img src="https://user-images.githubusercontent.com/67909892/109590002-9442bf80-7b4e-11eb-8e0e-2fcbf76ceef4.png" align="center" ></p>
 
+결과 화면은 count 변수에 들어있는 숫자로 결과 화면이 다르게 출력된다. 그리고 결과 버튼을 누르면 count 변수는 초기화
