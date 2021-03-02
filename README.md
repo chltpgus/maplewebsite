@@ -18,6 +18,6 @@ Html, Css을 사용해서 메인화면을 구성했다. 퍼센트를 조절해�
 테스트를 시작하면 나오는 질문 화면을 구성했다. 질문 div를 10개 만들고 display = 'none'처리를 해놓고 버튼을 누르면 다음 화면이 display = 'block'이 되서 출력되는 방식이다.
 count 변수에는 긍적 대답이 나오는 질문을 카운트해서 마지막 결과에 사용된다.
 
-<img src="https://user-images.githubusercontent.com/67909892/109589856-59d92280-7b4e-11eb-92ed-59a08871a1b3.png" align="center" width="40%">
+<p align="center"><img src="https://user-images.githubusercontent.com/67909892/109589856-59d92280-7b4e-11eb-92ed-59a08871a1b3.png" align="center" width="40%"></p>
 
 
